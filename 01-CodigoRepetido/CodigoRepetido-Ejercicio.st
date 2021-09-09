@@ -21,19 +21,7 @@ TestCase subclass: #CustomerBookTest
 	poolDictionaries: ''
 	category: 'CodigoRepetido-Ejercicio'!
 
-!CustomerBookTest methodsFor: 'testingAuxiliary' stamp: 'VV 9/9/2021 00:08:57'!
-checkDelay: closureNeededToBeChecked
-
-	| millisecondsBeforeRunning millisecondsAfterRunning |	
-		
-	millisecondsBeforeRunning := Time millisecondClockValue * millisecond.
-	closureNeededToBeChecked value.
-	millisecondsAfterRunning := Time millisecondClockValue * millisecond.
-	
-	self assert: (millisecondsAfterRunning-millisecondsBeforeRunning) < (maxDelayExpected * millisecond)
-	! !
-
-!CustomerBookTest methodsFor: 'testingAuxiliary' stamp: 'VV 9/9/2021 00:28:11'!
+!CustomerBookTest methodsFor: 'testingChecks' stamp: 'VV 9/9/2021 00:28:11'!
 checkQuantities: customerBookToCheck
 	
 	
@@ -46,59 +34,43 @@ checkQuantities: customerBookToCheck
 	
 ! !
 
-!CustomerBookTest methodsFor: 'testingAuxiliary' stamp: 'VV 9/9/2021 00:17:57'!
-tryCatch: closureToTry
-	
-	
-	
-	[ closureToTry value.
-	self fail ]
-		on: errorType 
-		do: [
-			closureOnCatch]
-! !
 
-
-!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 00:06:35'!
+!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 14:51:00'!
 test01AddingCustomerShouldNotTakeMoreThan50Milliseconds
 
 	| customerBook |
 	
-	customerBook := CustomerBook new.
-	maxDelayExpected := 50.	
-	self checkDelay: [customerBook addCustomerNamed: 'John Lennon'.].
-	
+	customerBook := CustomerBook new.	
+	self should: [customerBook addCustomerNamed: 'John Lennon'.] notTakeMoreThan: 50 milliSeconds.	
 	
 ! !
 
-!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 00:06:38'!
+!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 14:51:23'!
 test02RemovingCustomerShouldNotTakeMoreThan100Milliseconds
 
 	| customerBook |
 	customerBook := CustomerBook new.	
 	customerBook addCustomerNamed: 'Paul McCartney'.	  
 	
-	maxDelayExpected := 100.	
-	self checkDelay: [customerBook removeCustomerNamed: 'Paul McCartney'.	].	
+	self should: [customerBook removeCustomerNamed: 'Paul McCartney'.	] notTakeMoreThan: 100 milliSeconds.	
 	
 	
 	
 ! !
 
-!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 00:17:41'!
+!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 14:50:27'!
 test03CanNotAddACustomerWithEmptyName 
 
 	| customerBook |
 			
 	customerBook := CustomerBook new.
-	errorType:= Error.
-	closureOnCatch:=[ :anError | self assert: anError messageText = CustomerBook customerCanNotBeEmptyErrorMessage.
+	
+	self should:  [ customerBook addCustomerNamed: ''.] raise: Error
+	 	withExceptionDo: [ :anError | self assert: anError messageText = CustomerBook customerCanNotBeEmptyErrorMessage.
 			self assert: customerBook isEmpty ].
-		
- 	self tryCatch: [ customerBook addCustomerNamed: ''.].
-	! !
+! !
 
-!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 00:19:46'!
+!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 14:49:50'!
 test04CanNotRemoveAnInvalidCustomer
 	
 	| customerBook johnLennon |
@@ -107,12 +79,11 @@ test04CanNotRemoveAnInvalidCustomer
 	johnLennon := 'John Lennon'.
 	customerBook addCustomerNamed: johnLennon.
 	
-	errorType:= NotFound.
-	closureOnCatch:=[ :anError | 
+	self should:  [ customerBook removeCustomerNamed: 'Paul McCartney'.] raise: NotFound
+	 	withExceptionDo: [ :anError | 
 			self assert: customerBook numberOfCustomers = 1.
 			self assert: (customerBook includesCustomerNamed: johnLennon) ].
-		
- 	self tryCatch: [ customerBook removeCustomerNamed: 'Paul McCartney'.].
+	
 			
 	
 	
@@ -159,7 +130,7 @@ test06RemovingASuspendedCustomerShouldRemoveItFromCustomerBook
 	
 ! !
 
-!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 00:21:36'!
+!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 14:48:39'!
 test07CanNotSuspendAnInvalidCustomer
 	
 	| customerBook johnLennon |
@@ -167,19 +138,17 @@ test07CanNotSuspendAnInvalidCustomer
 	customerBook := CustomerBook new.
 	johnLennon := 'John Lennon'.
 	customerBook addCustomerNamed: johnLennon.
-	
-	errorType:= CantSuspend.
-	closureOnCatch:=[ :anError | 
+	self should:  [ customerBook suspendCustomerNamed: 'George Harrison'.] raise: CantSuspend
+	 	withExceptionDo: [ :anError | 
 			self assert: customerBook numberOfCustomers = 1.
 			self assert: (customerBook includesCustomerNamed: johnLennon)].
-		
- 	self tryCatch: [ customerBook suspendCustomerNamed: 'George Harrison'.].
+	
 			
 	
 	
 ! !
 
-!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 00:22:19'!
+!CustomerBookTest methodsFor: 'testing' stamp: 'VV 9/9/2021 14:49:14'!
 test08CanNotSuspendAnAlreadySuspendedCustomer
 	
 	| customerBook johnLennon |
@@ -189,12 +158,12 @@ test08CanNotSuspendAnAlreadySuspendedCustomer
 	customerBook addCustomerNamed: johnLennon.
 	customerBook suspendCustomerNamed: johnLennon.
 	
-	errorType:= CantSuspend.
-	closureOnCatch:=[ :anError | 
+	self should: [ customerBook suspendCustomerNamed: johnLennon.] raise: CantSuspend
+	 	withExceptionDo: [ :anError | 
 			self assert: customerBook numberOfCustomers = 1.
 			self assert: (customerBook includesCustomerNamed: johnLennon)].
-		
- 	self tryCatch: [ customerBook suspendCustomerNamed: johnLennon.].
+	
+	
 			
 
 ! !
