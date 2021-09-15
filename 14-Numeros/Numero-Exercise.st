@@ -354,7 +354,7 @@ canNotDivideByZeroErrorDescription
 !Numero class methodsFor: 'error descriptions' stamp: 'NR 4/15/2021 16:42:09'!
 invalidNumberTypeErrorDescription
 	
-	^ 'Tipo de nÃºmero invÃ¡lido!!!!!!'! !
+	^ 'Tipo de número inválido!!!!!!'! !
 
 
 !classDefinition: #Entero category: 'Numero-Exercise'!
@@ -503,6 +503,38 @@ isZero
 	
 	^value = 0! !
 
+
+!Entero methodsFor: 'fraccion initialization' stamp: 'VV 9/15/2021 17:03:25'!
+createFraccionWithNumerator: aNumerator
+	^(Fraccion new) initializeWith: aNumerator over: self.
+	
+		! !
+
+!Entero methodsFor: 'fraccion initialization' stamp: 'VV 9/15/2021 17:05:58'!
+denominatorInitializeFraccion: aFraccion withNumerator: aNumerator
+		
+	aFraccion initializeNumerator: aNumerator.
+	aFraccion initializeDenominator: self.
+	! !
+
+!Entero methodsFor: 'fraccion initialization' stamp: 'VV 9/15/2021 17:14:41'!
+denominatorWithNumerator: aNumerator
+	|greatestCommonDivisor numerator	 denominator|
+	greatestCommonDivisor := aNumerator greatestCommonDivisorWith: self. 
+	numerator := aNumerator // greatestCommonDivisor.
+	denominator := self // greatestCommonDivisor.
+	^denominator createFraccionWithNumerator: numerator.
+		! !
+
+!Entero methodsFor: 'fraccion initialization' stamp: 'VV 9/15/2021 17:22:36'!
+numeratorInitializeFraccion: aFraccion withDenominator: aDenominator.
+	
+	^aDenominator denominatorInitializeFraccion: aFraccion withNumerator: self.! !
+
+!Entero methodsFor: 'fraccion initialization' stamp: 'VV 9/15/2021 17:14:28'!
+numeratorWithDenominator: aDenominator
+	^aDenominator denominatorWithNumerator: self.! !
+
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
 !classDefinition: 'Entero class' category: 'Numero-Exercise'!
@@ -511,7 +543,7 @@ Entero class
 
 !Entero class methodsFor: 'instance creation' stamp: 'NR 4/15/2021 16:42:24'!
 negativeFibonacciErrorDescription
-	^ ' Fibonacci no estÃ¡ definido aquÃ­ para Enteros Negativos!!!!!!'! !
+	^ ' Fibonacci no está definido aquí para Enteros Negativos!!!!!!'! !
 
 !Entero class methodsFor: 'instance creation' stamp: 'VV 9/15/2021 15:17:40'!
 with: aValue 
@@ -544,7 +576,7 @@ fibonacci
 EnteroMayorAUno class
 	instanceVariableNames: ''!
 
-!EnteroMayorAUno class methodsFor: 'as yet unclassified' stamp: 'VV 9/15/2021 15:23:53'!
+!EnteroMayorAUno class methodsFor: 'subclass differenciation' stamp: 'VV 9/15/2021 15:23:53'!
 createEnteroWith: aValue 
 	
 	^ aValue >1.! !
@@ -557,6 +589,10 @@ Entero subclass: #EnteroNegativo
 	poolDictionaries: ''
 	category: 'Numero-Exercise'!
 
+!EnteroNegativo methodsFor: 'arithmetic operations' stamp: 'VV 9/15/2021 16:34:11'!
+denominatorWithNumerator: aNumerator.
+	^aNumerator negated / self negated! !
+
 !EnteroNegativo methodsFor: 'arithmetic operations' stamp: 'VV 9/15/2021 15:28:38'!
 fibonacci
 	self error: Entero negativeFibonacciErrorDescription.! !
@@ -567,7 +603,7 @@ fibonacci
 EnteroNegativo class
 	instanceVariableNames: ''!
 
-!EnteroNegativo class methodsFor: 'as yet unclassified' stamp: 'VV 9/15/2021 15:23:44'!
+!EnteroNegativo class methodsFor: 'subclass differenciation' stamp: 'VV 9/15/2021 15:23:44'!
 createEnteroWith: aValue 
 	
 	^ aValue < 0.
@@ -585,13 +621,22 @@ Entero subclass: #EnteroUno
 fibonacci
 	^ self.! !
 
+
+!EnteroUno methodsFor: 'fraccion initialization' stamp: 'VV 9/15/2021 16:40:49'!
+createFraccionWithNumerator: aNumerator
+	^aNumerator.	 ! !
+
+!EnteroUno methodsFor: 'fraccion initialization' stamp: 'VV 9/15/2021 17:24:10'!
+denominatorInitializeFraccion: aFraccion withNumerator: aNumerator
+	 self error: 'una fraccion no puede tener denominador 1 porque sino es un entero'.! !
+
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
 !classDefinition: 'EnteroUno class' category: 'Numero-Exercise'!
 EnteroUno class
 	instanceVariableNames: ''!
 
-!EnteroUno class methodsFor: 'as yet unclassified' stamp: 'VV 9/15/2021 15:25:43'!
+!EnteroUno class methodsFor: 'subclass differenciation' stamp: 'VV 9/15/2021 15:25:43'!
 createEnteroWith: aValue
 	^ aValue = 1.! !
 
@@ -607,13 +652,26 @@ Entero subclass: #EnteroZero
 fibonacci
 	^ Entero with: 1.! !
 
+
+!EnteroZero methodsFor: 'fraccion initialization' stamp: 'VV 9/15/2021 16:42:10'!
+denominatorWithNumerator: aNumerator.
+ 	self error: self class canNotDivideByZeroErrorDescription.! !
+
+!EnteroZero methodsFor: 'fraccion initialization' stamp: 'VV 9/15/2021 17:23:16'!
+numeratorInitializeFraccion: aFraccion withDenominator: aDenominator
+ 	self error: 'una fraccion no puede ser cero'.! !
+
+!EnteroZero methodsFor: 'fraccion initialization' stamp: 'VV 9/15/2021 16:32:33'!
+numeratorWithDenominator: aDenominator.
+ 	^self.! !
+
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
 !classDefinition: 'EnteroZero class' category: 'Numero-Exercise'!
 EnteroZero class
 	instanceVariableNames: ''!
 
-!EnteroZero class methodsFor: 'as yet unclassified' stamp: 'VV 9/15/2021 15:25:47'!
+!EnteroZero class methodsFor: 'subclass differenciation' stamp: 'VV 9/15/2021 15:25:47'!
 createEnteroWith: aValue
 	^aValue = 0.! !
 
@@ -730,15 +788,29 @@ numerator
 	^ numerator! !
 
 
-!Fraccion methodsFor: 'initialization' stamp: 'HernanWilkinson 5/7/2016 22:54'!
+!Fraccion methodsFor: 'initialization' stamp: 'VV 9/15/2021 15:56:51'!
+initializeDenominator: aDenominator
+
+	
+	denominator:= aDenominator.
+	
+	! !
+
+!Fraccion methodsFor: 'initialization' stamp: 'VV 9/15/2021 15:56:37'!
+initializeNumerator: aNumerator
+
+	
+	numerator:= aNumerator.
+	
+	! !
+
+!Fraccion methodsFor: 'initialization' stamp: 'VV 9/15/2021 17:23:35'!
 initializeWith: aNumerator over: aDenominator
 
 	"Estas precondiciones estan por si se comenten errores en la implementacion - Hernan"
-	aNumerator isZero ifTrue: [ self error: 'una fraccion no puede ser cero' ].
-	aDenominator isOne ifTrue: [ self error: 'una fraccion no puede tener denominador 1 porque sino es un entero' ].
+	aNumerator numeratorInitializeFraccion: self withDenominator: aDenominator.
 	
-	numerator := aNumerator.
-	denominator := aDenominator ! !
+	! !
 
 
 !Fraccion methodsFor: 'testing' stamp: 'NR 9/23/2018 23:41:38'!
@@ -771,21 +843,10 @@ printOn: aStream
 Fraccion class
 	instanceVariableNames: ''!
 
-!Fraccion class methodsFor: 'intance creation' stamp: 'NR 9/23/2018 23:45:19'!
+!Fraccion class methodsFor: 'instance creation' stamp: 'VV 9/15/2021 17:09:53'!
 with: aDividend over: aDivisor
-
-	| greatestCommonDivisor numerator denominator |
 	
-	aDivisor isZero ifTrue: [ self error: self canNotDivideByZeroErrorDescription ].
-	aDividend isZero ifTrue: [ ^aDividend ].
+	^aDividend numeratorWithDenominator: aDivisor.
 	
-	aDivisor isNegative ifTrue:[ ^aDividend negated / aDivisor negated].
 	
-	greatestCommonDivisor := aDividend greatestCommonDivisorWith: aDivisor. 
-	numerator := aDividend // greatestCommonDivisor.
-	denominator := aDivisor // greatestCommonDivisor.
-	
-	denominator isOne ifTrue: [ ^numerator ].
-
-	^self new initializeWith: numerator over: denominator
 	! !
