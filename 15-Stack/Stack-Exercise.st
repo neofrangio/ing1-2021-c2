@@ -144,8 +144,8 @@ TestCase subclass: #SentenceFinderByPrefixTest
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'VV 9/17/2021 17:11:09'!
-test01SentencedFoundShouldBeEmptyIfNotSentenceWithPrefix
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'VV 9/19/2021 14:28:55'!
+test01SentencedFoundShouldBeEmptyIfNotSentenceWithPrefixFound
 	|stackOraciones prefijo|
 	prefijo:= 'sum'.
 	stackOraciones := (OOStack new push: 'Winter') push:'winter'.
@@ -164,39 +164,33 @@ test02SentencedFoundShouldBeSizeOfSentencesWithPrefix
 	
 	! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'VV 9/17/2021 17:17:29'!
-test03SentencedFoundShouldBeSentencesWithPrefix
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'VV 9/19/2021 14:31:01'!
+test03SentencedFoundShouldBeInSameOrderAnWithPrefix
 	|stackOraciones prefijo|
 	prefijo:= 'win'.
-	stackOraciones := (OOStack new push: 'Winter') push:'winter'.
-	self assert: 	(((SentenceFinderByPrefix new withStack: stackOraciones) find: prefijo) first = 'winter')
+	stackOraciones := ((OOStack new push: 'win') push: 'winter') push:'Winter'.	
+	self assert: 	(((SentenceFinderByPrefix new withStack: stackOraciones) find: prefijo) last = 'winter').
+	self assert: 	(((SentenceFinderByPrefix new withStack: stackOraciones) find: prefijo) first = 'win')
 	
 	
 	! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'VV 9/17/2021 18:36:50'!
-test04SentencedFoundShouldBeInSameOrder
-	|stackOraciones prefijo|
-	prefijo:= 'win'.
-	stackOraciones := ((OOStack new push: 'win') push: 'Winter') push:'winter'.	
-	self assert: 	(((SentenceFinderByPrefix new withStack: stackOraciones) find: prefijo) last = 'winter')
-	
-	
-	! !
-
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'VV 9/17/2021 18:55:23'!
-test05SentencedFinderDoesNotChangeTheStack
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'VV 9/19/2021 14:33:04'!
+test04SentencedFinderDoesNotChangeTheStack
 	|stackOraciones prefijo|
 	prefijo:= 'win'.
 	stackOraciones := ((OOStack new push: 'win') push: 'Winter') push: 'winter'.	
-	(SentenceFinderByPrefix new withStack: stackOraciones) find: prefijo.
-	self assert: stackOraciones size  = 3.
+	(SentenceFinderByPrefix new withStack: stackOraciones) find: prefijo.	
+	self assert: stackOraciones pop = 'winter'.
+	self assert: stackOraciones pop = 'Winter'.
+	self assert: stackOraciones pop = 'win'.
+	self assert: stackOraciones isEmpty.
 	
 	
 	! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'VV 9/17/2021 19:50:08'!
-test06prefixCanNotBeBlank
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'VV 9/19/2021 14:31:34'!
+test05prefixCanNotBeBlank
 	|stackSentences prefix|
 	prefix:= ''.
 	stackSentences := ((OOStack new push: 'win') push: 'Winter') push: 'winter'.	
@@ -210,8 +204,8 @@ test06prefixCanNotBeBlank
 	
 	! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'VV 9/17/2021 19:53:30'!
-test07prefixCanNotHaveBeBlank
+!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'VV 9/19/2021 14:33:37'!
+test06prefixCanNotHaveSpaces
 	|stackSentences prefix|
 	prefix:= 'Winter is'.
 	stackSentences := ((OOStack new push: 'win') push: 'Winter') push: 'winter'.	
@@ -291,14 +285,17 @@ Object subclass: #SentenceFinderByPrefix
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
 
-!SentenceFinderByPrefix methodsFor: 'as yet unclassified' stamp: 'VV 9/17/2021 19:51:43'!
+!SentenceFinderByPrefix methodsFor: 'enumerating' stamp: 'VV 9/19/2021 14:28:10'!
 find: aPrefix
 	|sentence sentencesFound sentencesPopped|
 	
 	sentencesPopped := OrderedCollection new.
-	sentencesFound := OrderedCollection new.
+	sentencesFound := OrderedCollection new.	
+	
 	(aPrefix = '') ifTrue:[self error: SentenceFinderByPrefix prefixBlankErrorDescription].
 	((aPrefix findString: ' ') > 0) ifTrue:[self error: SentenceFinderByPrefix prefixHaveSpacesErrorDescription].
+	
+	
 	[((savedStack isEmpty) not)] 
 		whileTrue:[sentence := savedStack pop.
 				(sentence beginsWith: aPrefix) 
@@ -306,18 +303,24 @@ find: aPrefix
 				sentencesPopped addFirst: sentence.
 				].
 			
-	[((sentencesPopped isEmpty) not)] 
-		whileTrue:[sentence := sentencesPopped last.				
-				savedStack push: sentence.
-				sentencesPopped removeLast.
-				].
+	self fillSavedStackWith: sentencesPopped.			
+	
 			
 				
 	^sentencesFound.
 	
 	! !
 
-!SentenceFinderByPrefix methodsFor: 'as yet unclassified' stamp: 'VV 9/17/2021 18:54:01'!
+
+!SentenceFinderByPrefix methodsFor: 'modify' stamp: 'VV 9/19/2021 14:20:56'!
+fillSavedStackWith: aCollectionOfSentences
+	
+	[((aCollectionOfSentences isEmpty) not)] 
+		whileTrue:[		savedStack push: aCollectionOfSentences first.
+				aCollectionOfSentences removeFirst.
+				].! !
+
+!SentenceFinderByPrefix methodsFor: 'modify' stamp: 'VV 9/17/2021 18:54:01'!
 withStack: anStack
 	savedStack := anStack . 
 	! !
