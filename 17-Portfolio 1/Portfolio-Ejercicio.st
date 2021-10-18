@@ -146,7 +146,7 @@ test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction
 	
 ! !
 
-!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/7/2021 21:12:58'!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 17:42:41'!
 test12PortfolioKnowsRegisteredTransactions
 
 	| portfolio1 account1 deposit1|
@@ -154,14 +154,14 @@ test12PortfolioKnowsRegisteredTransactions
 	portfolio1 := Portfolio new.	
 	
 	account1 := ReceptiveAccount new.	
-	portfolio1 addPortfolio: account1.
+	portfolio1 addAccount: account1.
 	deposit1 := Deposit register: 100 on: account1.	
 	
 	self assert: (portfolio1 hasRegistered: deposit1).
 	
 ! !
 
-!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/7/2021 21:15:05'!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 17:42:48'!
 test13PortfolioDoNotKnowNotRegisteredTransactions
 
 	| portfolio1 account1 deposit1|
@@ -169,14 +169,14 @@ test13PortfolioDoNotKnowNotRegisteredTransactions
 	portfolio1 := Portfolio new.	
 	
 	account1 := ReceptiveAccount new.	
-	portfolio1 addPortfolio: account1.
+	portfolio1 addAccount: account1.
 	deposit1 := Deposit for: 100.	
 	
 	self deny: (portfolio1 hasRegistered: deposit1).
 	
 ! !
 
-!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/7/2021 21:28:26'!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/14/2021 21:36:36'!
 test14PortfolioKnowsItsTransactions 
 
 	| portfolio1 account1 deposit1 |
@@ -188,9 +188,80 @@ test14PortfolioKnowsItsTransactions
 	portfolio1 addAccount: account1.
 	
 	deposit1 := Deposit register: 50 on: account1.
+	
 		
 	self assert: 1 equals: portfolio1 transactions size.
-	self assert: (portfolio1 transactions includes: deposit1).
+	portfolio1 groupedAccounts includes: deposit1.
+	self assert: (portfolio1 transactions includes: deposit1 ).
+! !
+
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 16:45:21'!
+test15PortfolioCanNotAddAccountAlreadyIncluded
+
+	| portfolio1 portfolio2 account1 |
+	
+	portfolio1 := Portfolio new.
+	portfolio2 := Portfolio new.
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	portfolio2 addPortfolio: portfolio1.
+	self 
+		should: [ portfolio2 addAccount: account1.] 
+		raise: Error
+		withExceptionDo: [ :error | 
+			self assert: error messageText equals: Portfolio cannotAddAlreadyIncludedErrorDescription.
+			]
+	
+	
+		
+	
+! !
+
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 17:07:11'!
+test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded
+
+	| portfolio1 portfolio2 account1 |
+	
+	portfolio1 := Portfolio new.
+	portfolio2 := Portfolio new.
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	portfolio2 addAccount: account1.	
+	self 
+		should: [ portfolio2 addPortfolio: portfolio1.] 
+		raise: Error
+		withExceptionDo: [ :error | 
+			self assert: error messageText equals: Portfolio cannotAddAlreadyIncludedErrorDescription.
+			]
+	
+	
+		
+	
+! !
+
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/18/2021 14:30:59'!
+test17PortfolioCanNotAddAccountWithAccountsAlreadyIncludedInParentPortfolio
+
+	| portfolio1 portfolio2 account1 |
+	
+	portfolio1 := Portfolio new.
+	portfolio2 := Portfolio new.
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	portfolio1 addPortfolio: portfolio2.	
+	self 
+		should: [ portfolio2 addAccount: account1.] 
+		raise: Error
+		withExceptionDo: [ :error | 
+			self assert: error messageText equals: Portfolio cannotAddAlreadyIncludedErrorDescription.
+			]
+	
+	
+		
+	
 ! !
 
 
@@ -300,31 +371,83 @@ for: aValue
 
 !classDefinition: #Portfolio category: 'Portfolio-Ejercicio'!
 Object subclass: #Portfolio
-	instanceVariableNames: 'groupedAccounts'
+	instanceVariableNames: 'groupedAccounts parents'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Portfolio-Ejercicio'!
 
-!Portfolio methodsFor: 'balance' stamp: 'vv 10/7/2021 21:08:10'!
-balance
-	groupedAccounts size = 0 ifTrue:[^0].
-	^groupedAccounts sum:[ :account| account balance].
+!Portfolio methodsFor: 'balance' stamp: 'vv 10/14/2021 21:33:21'!
+balance	
+	^groupedAccounts sum:[ :account| account balance] ifEmpty:[^0].
 	! !
 
 
-!Portfolio methodsFor: 'modify' stamp: 'vv 10/7/2021 21:08:10'!
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:47:54'!
+accountsInPortfolio
+	|accounts|
+	accounts := OrderedCollection new.
+	groupedAccounts do: [:groupedAccount | groupedAccount addAccountsTo: accounts].
+	^accounts.
+	! !
+
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:33:25'!
+addAccountsTo: anAccountsCollection
+	groupedAccounts do: [:groupedAccount | groupedAccount addAccountsTo: anAccountsCollection].
+	
+	! !
+
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:08:58'!
+addParents: anPortofolio
+	parents add: anPortofolio.! !
+
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:40:21'!
+findRootParents 
+ 	|rootParents|
+	rootParents := OrderedCollection new.
+	(parents isEmpty) ifTrue:[ rootParents add: self. ^rootParents.].
+	parents do: [:aParent| rootParents addAll: (aParent findRootParents)].
+	^rootParents.
+	! !
+
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:47:55'!
+hasAccount: anAccount	
+	^  self accountsInPortfolio includes: anAccount.
+ 	 
+	! !
+
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:47:54'!
+hasAnyAccountOf: anPortofolio
+	^ anPortofolio accountsInPortfolio anySatisfy: [:anAccount | groupedAccounts anySatisfy: [:aGroupedAccount| aGroupedAccount hasAccount: anAccount]]
+	 
+	
+	! !
+
+
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/18/2021 14:30:50'!
 addAccount: anAccount
-	groupedAccounts add: anAccount.! !
+	((self findRootParents) anySatisfy: [:aParent| aParent hasAccount: anAccount]) ifTrue:[ self error: Portfolio cannotAddAlreadyIncludedErrorDescription].	
+	groupedAccounts add: anAccount.
+	
+	! !
 
-!Portfolio methodsFor: 'modify' stamp: 'vv 10/7/2021 21:08:10'!
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:38:21'!
 addPortfolio: anPortofolio
-	groupedAccounts add: anPortofolio.! !
+	
+	((self findRootParents) anySatisfy: [:aParent| aParent hasAnyAccountOf: anPortofolio]) ifTrue:[ self error: Portfolio cannotAddAlreadyIncludedErrorDescription].
+	groupedAccounts add: anPortofolio.
+	anPortofolio addParents: self.! !
 
 
-!Portfolio methodsFor: 'initialize' stamp: 'vv 10/7/2021 21:08:10'!
+!Portfolio methodsFor: 'initialize' stamp: 'vv 10/17/2021 17:18:17'!
 initialize
-	groupedAccounts := OrderedCollection new.! !
+	groupedAccounts := OrderedCollection new.
+	parents := OrderedCollection new.! !
 
+
+!Portfolio methodsFor: 'testing' stamp: 'vv 10/14/2021 21:35:51'!
+groupedAccounts	
+	^groupedAccounts.
+	! !
 
 !Portfolio methodsFor: 'testing' stamp: 'vv 10/7/2021 21:17:49'!
 hasRegistered: aTransaction
@@ -332,11 +455,28 @@ hasRegistered: aTransaction
 	^false.! !
 
 
-!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/7/2021 21:27:10'!
+!Portfolio methodsFor: 'access' stamp: 'vv 10/17/2021 17:51:30'!
+addTransactionsTo: aTransactionsCollection	
+	groupedAccounts transactions do: [:atransactionToAdd | aTransactionsCollection add: atransactionToAdd].
+	! !
+
+!Portfolio methodsFor: 'access' stamp: 'vv 10/17/2021 17:50:02'!
 transactions
 	|transactions|
 	transactions := OrderedCollection new.
-	^ groupedAccounts do: [:aGroupedAccount | transactions addAllLast: (aGroupedAccount transactions)].! !
+	groupedAccounts do: [:aGroupedAccount | aGroupedAccount addTransactionsTo:  transactions].
+	^transactions.! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'Portfolio class' category: 'Portfolio-Ejercicio'!
+Portfolio class
+	instanceVariableNames: ''!
+
+!Portfolio class methodsFor: 'errorDescriptions' stamp: 'vv 10/17/2021 16:44:40'!
+cannotAddAlreadyIncludedErrorDescription
+
+	^ 'Cannot add this to Portfolio, there are accounts already included'.! !
 
 
 !classDefinition: #ReceptiveAccount category: 'Portfolio-Ejercicio'!
@@ -351,6 +491,27 @@ initialize
 
 	transactions := OrderedCollection new.! !
 
+
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'vv 10/17/2021 17:41:10'!
+accounts
+	^OrderedCollection with: self.
+
+	 ! !
+
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'vv 10/17/2021 17:34:00'!
+addAccountsTo: anAccountsCollection 
+
+	^ anAccountsCollection add:self.! !
+
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'vv 10/17/2021 17:52:23'!
+addTransactionsTo: anTransactionCollection 
+
+	^ anTransactionCollection addAll: transactions.! !
+
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'vv 10/17/2021 17:05:46'!
+hasAccount: anAccount 
+
+	^ self = anAccount.! !
 
 !ReceptiveAccount methodsFor: 'transactions' stamp: 'HernanWilkinson 7/13/2011 18:37'!
 register: aTransaction
