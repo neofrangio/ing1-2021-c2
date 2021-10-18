@@ -1,0 +1,2266 @@
+
+
+----QUIT----(13 October 2021 15:20:10) CuisUniversity-4913.image priorSource: 14638157!
+
+----STARTUP---- (13 October 2021 15:20:10) as /Users/hernan/Documents/Cuis/5.0-64Bits/Cuis-University-Installer/CuisUniversity-4913.image!
+
+
+----QUIT----(13 October 2021 15:20:10) CuisUniversity-4913.image priorSource: 18661767!
+
+----STARTUP---- (13 October 2021 15:21:02) as /Users/hernan/Documents/Cuis/5.0-64Bits/Cuis-University-Installer/CuisUniversity-4913.image!
+
+
+----QUIT----(13 October 2021 15:21:02) CuisUniversity-4913.image priorSource: 18661997!
+
+----QUIT----(13 October 2021 15:26:07) CuisUniversity-4913.image priorSource: 14638157!
+
+----STARTUP---- (13 October 2021 15:26:08) as /Users/hernan/Documents/Cuis/5.0-64Bits/Cuis-University-Installer/CuisUniversity-4913.image!
+
+
+----QUIT----(13 October 2021 15:26:08) CuisUniversity-4913.image priorSource: 18661767!
+
+----STARTUP---- (14 October 2021 20:14:55) as C:\Users\valen\Downloads\windows64 (1)\windows64\CuisUniversity-4913.image!
+
+
+----End fileIn of \Users\valen\Downloads\windows64 (1)\windows64\Portfolio-Ejercicio.st----!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:09:58'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:09:58'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:09:58'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:10:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:10:25'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:10:25'!
+FAILURE!
+
+self assert: 1 equals: portfolio1 transactions size.!
+
+portfolio1 transactions size!
+
+portfolio1 transactions includes: deposit1!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/14/2021 21:15:46' prior: 50915000!
+test14PortfolioKnowsItsTransactions 
+
+	| portfolio1 account1 deposit1 |
+	
+	portfolio1 := Portfolio new.
+	
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	
+	deposit1 := Deposit register: 50 on: account1.
+		
+	self assert: 1 equals: portfolio1 transactions size.
+	self assert: (portfolio1 transactions includes: deposit1 ).
+! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/14/2021 21:16:04'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:16:04'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:16:04'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/14/2021 21:16:04'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:16:04'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:16:04'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/14/2021 21:16:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/14/2021 21:16:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/14/2021 21:16:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/14/2021 21:16:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/14/2021 21:16:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:16:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:16:05'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:16:05'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:16:05'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:17:08'!
+FAILURE!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/14/2021 21:17:15' prior: 50915333!
+test14PortfolioKnowsItsTransactions 
+
+	| portfolio1 account1 deposit1 |
+	
+	portfolio1 := Portfolio new.
+	
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	
+	deposit1 := Deposit register: 50 on: account1.
+		
+	
+	self assert: (portfolio1 transactions includes: deposit1 ).
+! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:17:17'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:17:17'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:17:17'!
+FAILURE!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/14/2021 21:17:21' prior: 50915409!
+test14PortfolioKnowsItsTransactions 
+
+	| portfolio1 account1 deposit1 |
+	
+	portfolio1 := Portfolio new.
+	
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	
+	deposit1 := Deposit register: 50 on: account1.
+		
+	self assert: 1 equals: portfolio1 transactions size.
+	self assert: (portfolio1 transactions includes: deposit1 ).
+! !
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:18:02'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:18:02'!
+FAILURE!
+
+portfolio1 transactions first = deposit1.!
+
+(portfolio1 transactions) first = deposit1.!
+
+portfolio1 transactions!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/14/2021 21:19:44' prior: 50915480!
+test14PortfolioKnowsItsTransactions 
+
+	| portfolio1 account1 deposit1 |
+	
+	portfolio1 := Portfolio new.
+	
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	
+	deposit1 := Deposit register: 50 on: account1.
+	
+		
+	self assert: 1 equals: portfolio1 transactions size.
+	self assert: (portfolio1 transactions includes: deposit1 ).
+! !
+
+portfolio1 transactions first = deposit1.!
+
+account1 transactions first = deposit1.  !
+
+account1 transactions first value.!
+
+portfolio1 transactions first value!
+
+----End fileIn of C:\Users\valen\Downloads\windows64 (1)\windows64\Packages\TerseGuide.pck.st----!
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/14/2021 21:22:37' prior: 50915162!
+transactions
+	|transactions|
+	transactions := OrderedCollection new.
+	^ groupedAccounts do: [:aGroupedAccount | transactions addAll: (aGroupedAccount transactions)].! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/14/2021 21:22:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:22:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:22:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/14/2021 21:22:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:22:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:22:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/14/2021 21:22:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/14/2021 21:22:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/14/2021 21:22:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/14/2021 21:22:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/14/2021 21:22:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:22:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:22:41'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:22:41'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:22:41'!
+FAILURE!
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/14/2021 21:24:26' prior: 50918451!
+transactions
+	|transactions|
+	transactions := OrderedCollection new.
+	^ groupedAccounts do: [:aGroupedAccount | aGroupedAccount do:[:aTransactionToAdd|  transactions add: aTransactionToAdd]].! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/14/2021 21:24:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:24:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:24:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/14/2021 21:24:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:24:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:24:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/14/2021 21:24:32'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/14/2021 21:24:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/14/2021 21:24:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/14/2021 21:24:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/14/2021 21:24:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:24:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:24:33'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:24:33'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:24:33'!
+ERROR!
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/14/2021 21:24:57' prior: 50918518!
+transactions
+	|transactions|
+	transactions := OrderedCollection new.
+	^ groupedAccounts do: [:aGroupedAccount | aGroupedAccount transactions do:[:aTransactionToAdd|  transactions add: aTransactionToAdd]].! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/14/2021 21:24:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:24:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:24:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/14/2021 21:25:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:25:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:25:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/14/2021 21:25:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/14/2021 21:25:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/14/2021 21:25:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/14/2021 21:25:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/14/2021 21:25:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:25:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:25:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:25:00'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:25:00'!
+FAILURE!
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/14/2021 21:25:14' prior: 50918585!
+transactions
+	|transactions|
+	transactions := OrderedCollection new.
+	^ groupedAccounts do: [:aGroupedAccount | (aGroupedAccount transactions) do:[:aTransactionToAdd|  transactions add: aTransactionToAdd]].! !
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/14/2021 21:25:22' prior: 50918653!
+transactions
+	|transactions|
+	transactions := OrderedCollection new.
+	^ groupedAccounts do: [:aGroupedAccount | (aGroupedAccount transactions) do: [:aTransactionToAdd|  transactions add: aTransactionToAdd]].! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:25:40'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:25:40'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:25:40'!
+FAILURE!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/14/2021 21:26:29' prior: 50915505!
+test14PortfolioKnowsItsTransactions 
+
+	| portfolio1 account1 deposit1 |
+	
+	portfolio1 := Portfolio new.
+	
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	
+	deposit1 := Deposit register: 50 on: account1.
+	
+		
+	self assert: 1 equals: portfolio1 transactions size.
+	portfolio1 transactions first value.
+	self assert: (portfolio1 transactions includes: deposit1 ).
+! !
+
+portfolio1 transactions first value.!
+
+portfolio1 transactions first value!
+!Portfolio methodsFor: 'balance' stamp: 'vv 10/14/2021 21:28:58' prior: 50915136!
+balance
+	groupedAccounts size = 0 ifTrue:[^0].
+	^groupedAccounts sum:[ :account| account balance].
+	! !
+!Portfolio methodsFor: 'balance' stamp: 'vv 10/14/2021 21:33:21' prior: 50918749!
+balance	
+	^groupedAccounts sum:[ :account| account balance] ifEmpty:[^0].
+	! !
+!Portfolio methodsFor: 'access' stamp: 'vv 10/14/2021 21:34:19' prior: 50918663!
+transactions
+	|transactions|
+	transactions := OrderedCollection new.
+	^ groupedAccounts do: [:aGroupedAccount | aGroupedAccount transactions do: [:aTransactionToAdd|  transactions add: aTransactionToAdd]].! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:34:42'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:34:42'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:34:42'!
+FAILURE!
+
+portfolio1 transactions first value.!
+!Portfolio methodsFor: 'balance' stamp: 'vv 10/14/2021 21:35:51'!
+groupedAccounts	
+	^groupedAccounts.
+	! !
+
+portfolio1 groupedAccounts includes: deposit1.!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/14/2021 21:36:36' prior: 50918731!
+test14PortfolioKnowsItsTransactions 
+
+	| portfolio1 account1 deposit1 |
+	
+	portfolio1 := Portfolio new.
+	
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	
+	deposit1 := Deposit register: 50 on: account1.
+	
+		
+	self assert: 1 equals: portfolio1 transactions size.
+	portfolio1 groupedAccounts includes: deposit1.
+	self assert: (portfolio1 transactions includes: deposit1 ).
+! !
+
+portfolio1 groupedAccounts includes: deposit1.!
+
+portfolio1 groupedAccounts includes: account1.  !
+
+account1 transactions size.  !
+
+account1 transactions do:[:trans| ^trans] =deposit1!
+
+(account1 transactions do:[:trans | ^trans]) =deposit1!
+
+(account1 transactions do:[:trans | ^trans])!
+
+(account1 transactions do:[:trans | ^trans]) value!
+
+(account1 transactions do:[:trans | self]) value !
+
+(account1 transactions do:[:trans | ^trans value])   =50!
+
+(account1 transactions do:[:trans | ^trans value]) !
+!Portfolio methodsFor: 'access' stamp: 'vv 10/14/2021 21:41:20' prior: 50918760!
+transactions
+	|transactions|
+	transactions := OrderedCollection new.
+	groupedAccounts do: [:aGroupedAccount | aGroupedAccount transactions do: [:aTransactionToAdd|  transactions add: aTransactionToAdd]].
+	^transactions.! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/14/2021 21:41:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:41:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/14/2021 21:41:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/14/2021 21:41:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:41:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:41:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/14/2021 21:41:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/14/2021 21:41:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/14/2021 21:41:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/14/2021 21:41:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/14/2021 21:41:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/14/2021 21:41:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/14/2021 21:41:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/14/2021 21:41:23'!
+PASSED!
+
+----STARTUP---- (17 October 2021 16:35:12) as C:\Users\valen\Downloads\windows64 (1)\windows64\CuisUniversity-4913.image!
+
+
+----End fileIn of \Users\valen\Downloads\windows64 (1)\windows64\Portfolio-Ejercicio.st----!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 16:39:53'!
+test15PortfolioCanNotAddAccountAlreadyIncluded
+
+	| portfolio1 account1 deposit1 |
+	
+	portfolio1 := Portfolio new.
+	
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	[portfolio1 addAccount: account1.	]	on:  Error do: [].
+	
+	
+		
+	
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 16:39:58' prior: 50919307!
+test15PortfolioCanNotAddAccountAlreadyIncluded
+
+	| portfolio1 account1 |
+	
+	portfolio1 := Portfolio new.
+	
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	[portfolio1 addAccount: account1.	]	on:  Error do: [].
+	
+	
+		
+	
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 16:43:42' prior: 50919318!
+test15PortfolioCanNotAddAccountAlreadyIncluded
+
+	| portfolio1 portfolio2 account1 |
+	
+	portfolio1 := Portfolio new.
+	portfolio2 := Portfolio new.
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	portfolio2 addPortfolio: portfolio1.
+	self 
+		should: [ portfolio2 addAccount: account1.] 
+		raise: Error
+		withExceptionDo: [ :error | 
+			self assert: error messageText equals: Portfolio cannotAddAlreadyIncluded.
+			]
+	
+	
+		
+	
+! !
+!Portfolio class methodsFor: 'nil' stamp: 'vv 10/17/2021 16:44:40'!
+cannotAddAlreadyIncludedErrorDescription
+
+	^ 'Cannot add this to Portfolio, there are accounts already included'.! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 16:45:08' prior: 50919329!
+test15PortfolioCanNotAddAccountAlreadyIncluded
+
+	| portfolio1 portfolio2 account1 |
+	
+	portfolio1 := Portfolio new.
+	portfolio2 := Portfolio new.
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	portfolio2 addPortfolio: portfolio1.
+	self 
+		should: [ portfolio2 addAccount: account1.] 
+		raise: Error
+		withExceptionDo: [ :error | 
+			self assert: error messageText equals: Portfolio cannotAddAlreadyIncluded.
+			]
+	
+	
+		
+	
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 16:45:21' prior: 50919353!
+test15PortfolioCanNotAddAccountAlreadyIncluded
+
+	| portfolio1 portfolio2 account1 |
+	
+	portfolio1 := Portfolio new.
+	portfolio2 := Portfolio new.
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	portfolio2 addPortfolio: portfolio1.
+	self 
+		should: [ portfolio2 addAccount: account1.] 
+		raise: Error
+		withExceptionDo: [ :error | 
+			self assert: error messageText equals: Portfolio cannotAddAlreadyIncludedErrorDescription.
+			]
+	
+	
+		
+	
+! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 16:45:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 16:45:24'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 16:45:24'!
+FAILURE!
+
+Object subclass: #Portfolio
+	instanceVariableNames: 'groupedAccounts parents'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+!classDefinition: #Portfolio category: 'Portfolio-Ejercicio' stamp: 'vv 10/17/2021 16:46:06'!
+Object subclass: #Portfolio
+	instanceVariableNames: 'groupedAccounts parents'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+Object subclass: #Portfolio
+	instanceVariableNames: 'groupedAccounts'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+!classDefinition: #Portfolio category: 'Portfolio-Ejercicio' stamp: 'vv 10/17/2021 16:46:38'!
+Object subclass: #Portfolio
+	instanceVariableNames: 'groupedAccounts'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 16:47:35' prior: 50919232!
+addAccount: anAccount
+	(self hasAccount: anAccount) ifFalse:[groupedAccounts add: anAccount.]
+	! !
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 16:48:14'!
+hasAccount: anAccount	
+	(self hasAccount: anAccount) ifFalse:[groupedAccounts add: anAccount.]
+	! !
+
+----End fileIn of C:\Users\valen\Downloads\windows64 (1)\windows64\Packages\TerseGuide.pck.st----!
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 16:52:42' prior: 50919481!
+hasAccount: anAccount	
+ 	^ groupedAccounts anySatisfy:[:agroupedAccount | agroupedAccount includes: anAccount]
+	
+	! !
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 16:53:44' prior: 50919475!
+addAccount: anAccount
+	(self hasAccount: anAccount) ifFalse:[groupedAccounts add: anAccount.].
+	
+	self error: Portfolio CanNotAddAlreadyErrorDescription.
+	! !
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 16:53:55' prior: 50922420!
+addAccount: anAccount
+	(self hasAccount: anAccount) ifFalse:[groupedAccounts add: anAccount.].
+	
+	self error: Portfolio cannotAddAlreadyIncludedErrorDescription.
+	! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 16:53:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 16:53:59'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 16:54:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 16:54:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 16:54:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 16:54:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 16:54:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 16:54:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 16:54:00'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 16:54:00'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 16:54:00'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 16:54:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 16:54:00'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 16:54:00'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 16:54:00'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 16:54:07'!
+ERROR!
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 16:55:45' prior: 50922428!
+addAccount: anAccount
+	(self hasAccount: anAccount) ifFalse:[groupedAccounts add: anAccount.].
+	
+	self error: Portfolio cannotAddAlreadyIncludedErrorDescription.
+	! !
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 16:58:17' prior: 50922413!
+hasAccount: anAccount	
+ 	^ groupedAccounts anySatisfy:[:agroupedAccount | agroupedAccount includes: anAccount]	.
+	! !
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 16:59:25' prior: 50922498!
+addAccount: anAccount
+	(self hasAccount: anAccount) ifTrue:[self error: Portfolio cannotAddAlreadyIncludedErrorDescription.]. 
+	groupedAccounts add: anAccount.
+	
+	! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 16:59:29'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 16:59:29'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 16:59:29'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 16:59:33'!
+ERROR!
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'vv 10/17/2021 17:00:20'!
+includes: anAccount 
+
+	^ self = anAccount.! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:00:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:00:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:00:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:00:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:00:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:00:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:00:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:00:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:00:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:00:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:00:22'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:00:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:00:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:00:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:00:23'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:00:23'!
+FAILURE!
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:02:42' prior: 50922513!
+addAccount: anAccount
+	(self hasAccount: anAccount) ifTrue:[self error: Portfolio cannotAddAlreadyIncludedErrorDescription]. 
+	groupedAccounts add: anAccount.
+	
+	! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:02:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:02:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:02:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:02:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:02:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:02:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:02:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:02:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:02:47'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:02:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:02:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:02:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:02:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:02:48'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:02:48'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:02:48'!
+FAILURE!
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:03:21' prior: 50922506!
+hasAccount: anAccount	
+ 	^ groupedAccounts anySatisfy:[:agroupedAccount | agroupedAccount hasAccount: anAccount]	.
+	! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:03:25'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:03:26'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:03:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:03:26'!
+FAILURE!
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:04:29' prior: 50922721!
+hasAccount: anAccount	
+	^ (self groupedAccounts includes: anAccount) or: [groupedAccounts anySatisfy:[:agroupedAccount | agroupedAccount hasAccount: anAccount]	.]
+ 	 
+	! !
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:04:43' prior: 50922786!
+hasAccount: anAccount	
+	^ (groupedAccounts includes: anAccount) or: [groupedAccounts anySatisfy:[:agroupedAccount | agroupedAccount hasAccount: anAccount]	.]
+ 	 
+	! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:05:03'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:05:03'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:05:04'!
+ERROR!
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'vv 10/17/2021 17:05:46'!
+hasAccount: anAccount 
+
+	^ self = anAccount.! !
+
+!methodRemoval: ReceptiveAccount #includes: stamp: 'vv 10/17/2021 17:05:52'!
+includes: anAccount 
+
+	^ self = anAccount.!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:05:55'!
+PASSED!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 17:06:56'!
+test15PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded
+
+	| portfolio1 portfolio2 account1 |
+	
+	portfolio1 := Portfolio new.
+	portfolio2 := Portfolio new.
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	portfolio2 addAccount: account1.	
+	self 
+		should: [ portfolio2 addPortfolio: portfolio1.] 
+		raise: Error
+		withExceptionDo: [ :error | 
+			self assert: error messageText equals: Portfolio cannotAddAlreadyIncludedErrorDescription.
+			]
+	
+	
+		
+	
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 17:07:11'!
+test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded
+
+	| portfolio1 portfolio2 account1 |
+	
+	portfolio1 := Portfolio new.
+	portfolio2 := Portfolio new.
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	portfolio2 addAccount: account1.	
+	self 
+		should: [ portfolio2 addPortfolio: portfolio1.] 
+		raise: Error
+		withExceptionDo: [ :error | 
+			self assert: error messageText equals: Portfolio cannotAddAlreadyIncludedErrorDescription.
+			]
+	
+	
+		
+	
+! !
+
+!methodRemoval: ReceptiveAccountTest #test15PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:07:12'!
+test15PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded
+
+	| portfolio1 portfolio2 account1 |
+	
+	portfolio1 := Portfolio new.
+	portfolio2 := Portfolio new.
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	portfolio2 addAccount: account1.	
+	self 
+		should: [ portfolio2 addPortfolio: portfolio1.] 
+		raise: Error
+		withExceptionDo: [ :error | 
+			self assert: error messageText equals: Portfolio cannotAddAlreadyIncludedErrorDescription.
+			]
+	
+	
+		
+	
+!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:07:18'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:07:19'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:07:19'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:07:19'!
+FAILURE!
+
+Object subclass: #Portfolio
+	instanceVariableNames: 'groupedAccounts Parents'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+!classDefinition: #Portfolio category: 'Portfolio-Ejercicio' stamp: 'vv 10/17/2021 17:07:53'!
+Object subclass: #Portfolio
+	instanceVariableNames: 'groupedAccounts Parents'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+Object subclass: #Portfolio
+	instanceVariableNames: 'groupedAccounts parents'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+
+!classDefinition: #Portfolio category: 'Portfolio-Ejercicio' stamp: 'vv 10/17/2021 17:07:58'!
+Object subclass: #Portfolio
+	instanceVariableNames: 'groupedAccounts parents'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Portfolio-Ejercicio'!
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:08:31' prior: 50919236!
+addPortfolio: anPortofolio
+	groupedAccounts add: anPortofolio.
+	anPortofolio addParents: self.! !
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:08:58'!
+addParents: anPortofolio
+	parents add: anPortofolio.! !
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:11:16' prior: 50923079!
+addPortfolio: anPortofolio
+	((self findParentRoot) hasAnyAccountOf: anPortofolio) ifTrue:[ self error: Portfolio CanNotAddAlreadyIncludedErrorDescription].
+	groupedAccounts add: anPortofolio.
+	anPortofolio addParents: self.! !
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:11:45' prior: 50923090!
+addPortfolio: anPortofolio
+	((self findParentRoot) hasAnyAccountOf: anPortofolio) ifTrue:[ self error: Portfolio cannotAddAlreadyIncludedErrorDescription].
+	groupedAccounts add: anPortofolio.
+	anPortofolio addParents: self.! !
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:13:07'!
+findParentRoot 
+	(parents isEmpty) ifTrue:[ ^self].
+	^parents
+	! !
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:17:31'!
+hasAnyAccountOf: anPortofolio
+	
+	((self findParentRoot) anySatisfy: [:aParent| aParent hasAnyAccountOf: anPortofolio]) ifTrue:[ self error: Portfolio cannotAddAlreadyIncludedErrorDescription].
+	groupedAccounts add: anPortofolio.
+	anPortofolio addParents: self.! !
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:18:00' prior: 50923100!
+addPortfolio: anPortofolio
+	
+	((self findParentRoot) anySatisfy: [:aParent| aParent hasAnyAccountOf: anPortofolio]) ifTrue:[ self error: Portfolio cannotAddAlreadyIncludedErrorDescription].
+	groupedAccounts add: anPortofolio.
+	anPortofolio addParents: self.! !
+!Portfolio methodsFor: 'initialize' stamp: 'vv 10/17/2021 17:18:17' prior: 50919241 overrides: 16896425!
+initialize
+	groupedAccounts := OrderedCollection new.
+	parents := OrderedCollection new.! !
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:19:33' prior: 50923110!
+findParentRoot 
+	(parents isEmpty) ifTrue:[ ^ self].
+	^parents findParentRoot.
+	! !
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:23:42' prior: 50923144!
+findParentRoot 
+ 	|rootParents|
+	rootParents := OrderedCollection new.
+	(parents isEmpty) ifTrue:[ ^ rootParents add: self].
+	parents do: [:aParent| rootParents addAll: (aParent findParentRoot)].
+	^rootParents.
+	! !
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:24:08'!
+findRootParents 
+ 	|rootParents|
+	rootParents := OrderedCollection new.
+	(parents isEmpty) ifTrue:[ ^ rootParents add: self].
+	parents do: [:aParent| rootParents addAll: (aParent findParentRoot)].
+	^rootParents.
+	! !
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/17/2021 17:24:08' prior: 50923126!
+addPortfolio: anPortofolio
+	
+	((self findRootParents) anySatisfy: [:aParent| aParent hasAnyAccountOf: anPortofolio]) ifTrue:[ self error: Portfolio cannotAddAlreadyIncludedErrorDescription].
+	groupedAccounts add: anPortofolio.
+	anPortofolio addParents: self.! !
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/17/2021 17:24:08' prior: 50923150!
+findParentRoot 
+ 	|rootParents|
+	rootParents := OrderedCollection new.
+	(parents isEmpty) ifTrue:[ ^ rootParents add: self].
+	parents do: [:aParent| rootParents addAll: (aParent findRootParents)].
+	^rootParents.
+	! !
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/17/2021 17:24:08' prior: 50923115!
+hasAnyAccountOf: anPortofolio
+	
+	((self findRootParents) anySatisfy: [:aParent| aParent hasAnyAccountOf: anPortofolio]) ifTrue:[ self error: Portfolio cannotAddAlreadyIncludedErrorDescription].
+	groupedAccounts add: anPortofolio.
+	anPortofolio addParents: self.! !
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/17/2021 17:24:08' prior: 50923159!
+findRootParents 
+ 	|rootParents|
+	rootParents := OrderedCollection new.
+	(parents isEmpty) ifTrue:[ ^ rootParents add: self].
+	parents do: [:aParent| rootParents addAll: (aParent findRootParents)].
+	^rootParents.
+	! !
+
+!methodRemoval: Portfolio #findParentRoot stamp: 'vv 10/17/2021 17:24:08'!
+findParentRoot 
+ 	|rootParents|
+	rootParents := OrderedCollection new.
+	(parents isEmpty) ifTrue:[ ^ rootParents add: self].
+	parents do: [:aParent| rootParents addAll: (aParent findRootParents)].
+	^rootParents.
+	!
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:28:18' prior: 50923191!
+hasAnyAccountOf: anPortofolio
+	^ anPortofolio accountsIncluded anySatisfy: [:anAccount | groupedAccounts anySatisfy: [:aGroupedAccount| aGroupedAccount hasAccount: anAccount]]
+	 
+	
+	! !
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:29:07' prior: 50923222!
+hasAnyAccountOf: anPortofolio
+	^ anPortofolio accounts anySatisfy: [:anAccount | groupedAccounts anySatisfy: [:aGroupedAccount| aGroupedAccount hasAccount: anAccount]]
+	 
+	
+	! !
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:32:24'!
+accounts
+	|accounts|
+	accounts := OrderedCollection new.
+	groupedAccounts do: [:groupedAccount | groupedAccount addAccountsTo: accounts].
+	^accounts.
+	! !
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:33:25'!
+addAccountsTo: anAccountsCollection
+	groupedAccounts do: [:groupedAccount | groupedAccount addAccountsTo: anAccountsCollection].
+	
+	! !
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'vv 10/17/2021 17:34:00'!
+addAccountsTo: anAccountsCollection 
+
+	^ anAccountsCollection add:self.! !
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:34:51' prior: 50922794!
+hasAccount: anAccount	
+	^  self accounts includes: anAccount.
+ 	 
+	! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:35:06'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:35:06'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:35:06'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:35:06'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:35:06'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:35:06'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:35:06'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:35:06'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:35:06'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:35:07'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:35:07'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:35:07'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:35:07'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:35:07'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:35:07'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:35:07'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:35:09'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:36:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:36:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:36:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:36:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:36:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:36:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:36:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:36:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:36:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:36:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:36:21'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:36:21'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:36:21'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:36:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:36:21'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:36:21'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:36:38'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:37:03'!
+ERROR!
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/17/2021 17:38:21' prior: 50923169!
+addPortfolio: anPortofolio
+	
+	((self findRootParents) anySatisfy: [:aParent| aParent hasAnyAccountOf: anPortofolio]) ifTrue:[ self error: Portfolio cannotAddAlreadyIncludedErrorDescription].
+	groupedAccounts add: anPortofolio.
+	anPortofolio addParents: self.! !
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:39:04'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:39:15'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:39:23'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:39:23'!
+ERROR!
+
+self findRootParents!
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:40:21' prior: 50923203!
+findRootParents 
+ 	|rootParents|
+	rootParents := OrderedCollection new.
+	(parents isEmpty) ifTrue:[ rootParents add: self. ^rootParents.].
+	parents do: [:aParent| rootParents addAll: (aParent findRootParents)].
+	^rootParents.
+	! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:40:24'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:40:24'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:40:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:40:28'!
+ERROR!
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'vv 10/17/2021 17:41:10'!
+accounts
+	^OrderedCollection with: self.
+
+	 ! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:41:12'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:41:12'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:41:12'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:41:12'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:41:12'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:41:12'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:41:12'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:41:12'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:41:12'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:41:12'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:41:12'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:41:12'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:41:12'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:41:13'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:41:13'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:41:13'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:41:15'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:41:50'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:41:50'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:41:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:41:52'!
+ERROR!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 17:42:41' prior: 50919065!
+test12PortfolioKnowsRegisteredTransactions
+
+	| portfolio1 account1 deposit1|
+	
+	portfolio1 := Portfolio new.	
+	
+	account1 := ReceptiveAccount new.	
+	portfolio1 addAccount: account1.
+	deposit1 := Deposit register: 100 on: account1.	
+	
+	self assert: (portfolio1 hasRegistered: deposit1).
+	
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/17/2021 17:42:48' prior: 50919077!
+test13PortfolioDoNotKnowNotRegisteredTransactions
+
+	| portfolio1 account1 deposit1|
+	
+	portfolio1 := Portfolio new.	
+	
+	account1 := ReceptiveAccount new.	
+	portfolio1 addAccount: account1.
+	deposit1 := Deposit for: 100.	
+	
+	self deny: (portfolio1 hasRegistered: deposit1).
+	
+! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:42:50'!
+PASSED!
+!Portfolio methodsFor: 'private' stamp: 'vv 10/17/2021 17:47:54'!
+accountsInPortfolio
+	|accounts|
+	accounts := OrderedCollection new.
+	groupedAccounts do: [:groupedAccount | groupedAccount addAccountsTo: accounts].
+	^accounts.
+	! !
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/17/2021 17:47:54' prior: 50923231!
+hasAnyAccountOf: anPortofolio
+	^ anPortofolio accountsInPortfolio anySatisfy: [:anAccount | groupedAccounts anySatisfy: [:aGroupedAccount| aGroupedAccount hasAccount: anAccount]]
+	 
+	
+	! !
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'vv 10/17/2021 17:47:55' prior: 50923258!
+hasAccount: anAccount	
+	^  self accountsInPortfolio includes: anAccount.
+ 	 
+	! !
+
+!methodRemoval: Portfolio #accounts stamp: 'vv 10/17/2021 17:47:55'!
+accounts
+	|accounts|
+	accounts := OrderedCollection new.
+	groupedAccounts do: [:groupedAccount | groupedAccount addAccountsTo: accounts].
+	^accounts.
+	!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:48:01'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:48:01'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:48:01'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:48:01'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:48:01'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:48:01'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:48:01'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:48:01'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:48:01'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:48:01'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:48:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:48:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:48:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:48:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:48:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:48:02'!
+PASSED!
+!Portfolio methodsFor: 'access' stamp: 'vv 10/17/2021 17:50:02' prior: 50919256!
+transactions
+	|transactions|
+	transactions := OrderedCollection new.
+	groupedAccounts do: [:aGroupedAccount | aGroupedAccount addTransactionsTo:  transactions].
+	^transactions.! !
+!Portfolio methodsFor: 'access' stamp: 'vv 10/17/2021 17:51:30'!
+addTransactionsTo: aTransactionsCollection	
+	groupedAccounts transactions do: [:atransactionToAdd | aTransactionsCollection add: atransactionToAdd].
+	! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:51:35'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:51:36'!
+ERROR!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:51:36'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:51:36'!
+ERROR!
+!ReceptiveAccount methodsFor: 'transactions' stamp: 'vv 10/17/2021 17:52:23'!
+addTransactionsTo: anTransactionCollection 
+
+	^ anTransactionCollection addAll: transactions.! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/17/2021 17:52:26'!
+PASSED!
+
+----QUIT----(17 October 2021 17:55:33) CuisUniversity-4913.image priorSource: 18661997!
+
+----STARTUP---- (18 October 2021 14:27:23) as C:\Users\valen\Downloads\windows64 (1)\windows64\CuisUniversity-4913.image!
+
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/18/2021 14:28:40'!
+test17PortfolioCanNotAddAccountWithAccountsAlreadyIncludedInParentPortfolio
+
+	| portfolio1 portfolio2 account1 |
+	
+	portfolio1 := Portfolio new.
+	portfolio2 := Portfolio new.
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	portfolio1 addPortfolio: portfolio2.	
+	self 
+		should: [ portfolio2 addAccount: account1.] 
+		raise: Error
+		withExceptionDo: [ :error | 
+			self assert: error messageText equals: Portfolio cannotAddAlreadyIncludedInParentErrorDescription.
+			]
+	
+	
+		
+	
+! !
+!Portfolio class methodsFor: 'errorDescriptions' stamp: 'vv 10/18/2021 14:29:09'!
+cannotAddAlreadyIncludedInParentErrorDescription
+
+	^ 'Cannot add this to Portfolio, the account already included in parent'.! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/18/2021 14:29:23'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test17PortfolioCanNotAddAccountWithAccountsAlreadyIncludedInParentPortfolio stamp: 'vv 10/18/2021 14:29:23'!
+FAILURE!
+
+!testRun: #ReceptiveAccountTest #test17PortfolioCanNotAddAccountWithAccountsAlreadyIncludedInParentPortfolio stamp: 'vv 10/18/2021 14:29:23'!
+FAILURE!
+!Portfolio methodsFor: 'modify' stamp: 'vv 10/18/2021 14:30:50' prior: 50922651!
+addAccount: anAccount
+	((self findRootParents) anySatisfy: [:aParent| aParent hasAccount: anAccount]) ifTrue:[ self error: Portfolio cannotAddAlreadyIncludedErrorDescription].	
+	groupedAccounts add: anAccount.
+	
+	! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'vv 10/18/2021 14:30:59' prior: 50923980!
+test17PortfolioCanNotAddAccountWithAccountsAlreadyIncludedInParentPortfolio
+
+	| portfolio1 portfolio2 account1 |
+	
+	portfolio1 := Portfolio new.
+	portfolio2 := Portfolio new.
+	account1 := ReceptiveAccount new.
+	
+	portfolio1 addAccount: account1.
+	portfolio1 addPortfolio: portfolio2.	
+	self 
+		should: [ portfolio2 addAccount: account1.] 
+		raise: Error
+		withExceptionDo: [ :error | 
+			self assert: error messageText equals: Portfolio cannotAddAlreadyIncludedErrorDescription.
+			]
+	
+	
+		
+	
+! !
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08PortfolioHaveZeroBalanceWhenCreated stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test09PortfolioIncreasesBalanceWithOneAccountDeposit stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test10PortfolioHaveKnowsBalancesWithTwoAccountDepositDifferenteBalances stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test11PortfolioHaveKnowsBalancesWithOnePortfolioWithAccountAndTransaction stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test12PortfolioKnowsRegisteredTransactions stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test13PortfolioDoNotKnowNotRegisteredTransactions stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test14PortfolioKnowsItsTransactions stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test15PortfolioCanNotAddAccountAlreadyIncluded stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test16PortfolioCanNotAddPortfolioWithAccountsAlreadyIncluded stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test17PortfolioCanNotAddAccountWithAccountsAlreadyIncludedInParentPortfolio stamp: 'vv 10/18/2021 14:31:02'!
+PASSED!
+
+!methodRemoval: Portfolio class #cannotAddAlreadyIncludedInParentErrorDescription stamp: 'vv 10/18/2021 14:31:20'!
+cannotAddAlreadyIncludedInParentErrorDescription
+
+	^ 'Cannot add this to Portfolio, the account already included in parent'.!
+
+----QUIT----(18 October 2021 14:31:27) CuisUniversity-4913.image priorSource: 18954321!
